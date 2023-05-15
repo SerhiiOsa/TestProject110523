@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 50px;
+        }
+
+        .wrapper{
+            max-width: 2874px;
+            height: 1310px;
+            background: #F6F5F7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .form-wrapper {
+            width: 1536px;
+            height: 960px;
+            display: flex;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .form-wrapper > div {
+            width: 768px;
+            height: 960px;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+        }
+
+        #sign-in-form {
+            background: white;
+            display: flex;
+            z-index: 2;
+        }
+
+        #hello-friend {
+            color: white;
+            background: linear-gradient(to right, #EB5655 0%, #EB526E 100%);
+            display: flex;
+            z-index: 1;
+        }
+
+        #welcome-back {
+            color: white;
+            background: linear-gradient(to right, #EC5A3C 0%, #EB5655 100%);
+            display: flex;
+            z-index: 1;
+        }
+
+        #create-account {
+            background: white;
+            display: flex;
+            z-index: 2;
+        }
+
+        #block-right {
+            background: #F6F5F7;
+            display: flex;
+            z-index: 3;
+        }
+
+        #block-left {
+            background: #F6F5F7;
+            display: flex;
+            z-index: 3;
+        }
+
+        button {
+            color: white;
+            border-color: white;
+            background-color: transparent;
+            border-radius: 50px;
+            width: 300px;
+            height: 70px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-wrapper">
+            <div id="block-left"></div>
+            <div id="sign-in-form">Sign in</div>
+            <div id="welcome-back">
+                Welcome back
+                <button id="sign-in" onclick="signIn()">sign in</button>
+            </div>
+            <div id="hello-friend">
+                Hello friend
+                <button id="sign-up" onclick="signUp()">sign up</button>
+            </div>
+            <div id="create-account">Create account</div>
+            <div id="block-right"></div>
+        </div>
+    </div>
+        
+
+    <script>
+        const SIGN_IN = document.getElementById('sign-in-form');
+        const HELLO_FRIEND = document.getElementById('hello-friend');
+        const WELLCOME_BACK = document.getElementById('welcome-back');
+        const CREATE_ACCOUNT = document.getElementById('create-account');
+        const BLOCK_RIGHT = document.getElementById('block-right');
+        const BLOCK_LEFT = document.getElementById('block-left');
+        let position = 768;
+        HELLO_FRIEND.style.left = '768px';
+        WELLCOME_BACK.style.left = '0px';
+        BLOCK_RIGHT.style.left = '1536px';
+        CREATE_ACCOUNT.style.left = '1536px';
+        BLOCK_LEFT.style.left = '-768px';
+        SIGN_IN.style.left = '0px';
+
+        let moveElement = null;
+
+        function signUp() {
+            let moveElement = setInterval(() => {
+                if(position === 0) {
+                    clearInterval(moveElement);
+                    moveElement = null;
+                } else {
+                    position -=4;
+                    CREATE_ACCOUNT.style.left = position + 768 + 'px';
+                    SIGN_IN.style.left = position - 768 + 'px';
+                }
+            }, 1);
+        };
+
+        function signIn() {
+            let moveElement = setInterval(() => {
+                if(position === 768) {
+                    clearInterval(moveElement);
+                    moveElement = null;
+                } else {
+                    position +=4;
+                    CREATE_ACCOUNT.style.left = position + 768 + 'px';
+                    SIGN_IN.style.left = position - 768 + 'px';
+                }
+            }, 1);
+        };
+
+    </script>
+</body>
+</html>
