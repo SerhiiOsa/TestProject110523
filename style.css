@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+
+.wrapper{
+    max-width: 2874px;
+    height: 1310px;
+    background: #F6F5F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    width: 1536px;
+    height: 960px;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.form-wrapper > div {
+    width: 768px;
+    height: 960px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+
+#sign-in-form {
+    background: white;
+    display: flex;
+    z-index: 2;
+}
+
+#hello-friend {
+    color: white;
+    background: linear-gradient(to right, #EB5655 0%, #EB526E 100%);
+    display: flex;
+    z-index: 1;
+}
+
+#welcome-back {
+    color: white;
+    background: linear-gradient(to right, #EC5A3C 0%, #EB5655 100%);
+    display: flex;
+    z-index: 1;
+}
+
+#create-account {
+    background: white;
+    display: flex;
+    z-index: 2;
+}
+
+#block-right {
+    background: #F6F5F7;
+    display: flex;
+    z-index: 3;
+}
+
+#block-left {
+    background: #F6F5F7;
+    display: flex;
+    z-index: 3;
+}
+
+button {
+    color: white;
+    border-color: white;
+    background-color: transparent;
+    border-radius: 50px;
+    width: 300px;
+    height: 70px;
+}
