@@ -7,29 +7,121 @@
 
 @media (min-width: 360px) {
     .wrapper{
-        max-width: 799px;
+        max-width: 540px;
         height: 100vh;
     }
     
     .form-wrapper {
         width: 360px;
-        height: 740px;
+        height: 650px;
         flex-direction: column;
+        box-shadow: 2px 5px 3px 2px #C6C5C7;
     }
     
     .form-wrapper > div {
         width: 360px;
-        height: 460px;
+        height: 390px;
     }
 
     #sign-in-form, #create-account {
         width: 360px;
-        height: 460px;
+        height: 390px;
     }
 
     #hello-friend, #welcome-back {
         width: 360px;
-        height: 280px;
+        height: 260px;
+    }
+    
+    #sign-in-form > div, #create-account > div {
+        font-size: 28px;
+        font-weight: bolder;
+        margin-bottom: 28px;
+    }
+    
+    .soc-networks {
+        width: 142px;
+        height: 38px;
+    }
+    
+    .soc-networks > div {
+        font-size: 14px;
+        width: 38px;
+        height: 38px;
+    }
+    
+    #sign-in-form > p, #create-account > p {
+        font-size: 12px;
+        margin-bottom: 9px;
+    }
+    
+    #create-account > p {
+        font-size: 12px;
+    }
+    
+    .loginForm > p {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+    
+    input {
+        font-size: 12px;
+        width: 268px;
+        height: 38px;
+        margin-bottom: 19px;
+    }
+    
+    input:last-child {
+        font-size: 12px;
+        border-radius: 30px;
+        width: 144px;
+        height: 38px;
+    }
+    
+    #hello-friend > div, #welcome-back > div {
+        font-size: 28px;
+        font-weight: bolder;
+        margin-bottom: 28px;
+    }
+    
+    #hello-friend > div > p, #welcome-back > div > p {
+        font-size: 14px;
+    }
+    
+    button {
+        font-size: 12px;
+        border-radius: 24px;
+        width: 144px;
+        height: 38px;
+    }
+}
+
+@media (min-width: 541px) {
+    .wrapper{
+        max-width: 799px;
+        height: 100vh;
+    }
+    
+    .form-wrapper {
+        width: 540px;
+        height: 840px;
+        flex-direction: column;
+        box-shadow: 2px 5px 3px 2px #C6C5C7;
+    }
+    
+    .form-wrapper > div {
+        width: 540px;
+        height: 504px;
+    }
+
+    #sign-in-form, #create-account {
+        width: 540px;
+        height: 504px;
+    }
+
+    #hello-friend, #welcome-back {
+        width: 540px;
+        height: 336px;
     }
     
     #sign-in-form > div, #create-account > div {
@@ -97,7 +189,7 @@
 
 @media (min-width: 800px) {
     .wrapper{
-        max-width: 1299px;
+        max-width: 1099px;
         height: 100vh;
     }
     
@@ -177,7 +269,89 @@
     }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1100px) {
+    .wrapper{
+        max-width: 1599px;
+        height: 100vh;
+    }
+    
+    .form-wrapper {
+        width: 956px;
+        height: 598px;
+        box-shadow: 6px 16px 10px 6px #C6C5C7;
+        flex-direction: row;
+    }
+    
+    .form-wrapper > div {
+        width: 478px;
+        height: 598px;
+    }
+    
+    #sign-in-form, #create-account, #hello-friend, #welcome-back {
+        width: 478px;
+        height: 598px;
+    }
+
+    #sign-in-form > div, #create-account > div {
+        font-size: 36px;
+        font-weight: bolder;
+        margin-bottom: 36px;
+    }
+    
+    .soc-networks {
+        width: 184px;
+        height: 49px;
+    }
+    
+    .soc-networks > div {
+        font-size: 18px;
+        width: 49px;
+        height: 49px;
+    }
+    
+    #sign-in-form > p, #create-account > p {
+        font-size: 18px;
+        margin-bottom: 11px;
+    }
+    
+    .loginForm > p {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+    
+    input {
+        font-size: 15px;
+        width: 268px;
+        height: 38px;
+        margin-bottom: 19px;
+    }
+    
+    input:last-child {
+        font-size: 15px;
+        border-radius: 30px;
+        width: 187px;
+        height: 49px;
+    }
+    
+    #hello-friend > div, #welcome-back > div {
+        font-size: 36px;
+        font-weight: bolder;
+        margin-bottom: 36px;
+    }
+    
+    #hello-friend > div > p, #welcome-back > div > p {
+        font-size: 18px;
+    }
+    
+    button {
+        font-size: 15px;
+        border-radius: 24px;
+        width: 187px;
+        height: 49px;
+    }
+}
+
+@media (min-width: 1600px) {
     .wrapper{
         max-width: 1999px;
         height: 100vh;

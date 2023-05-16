@@ -22,7 +22,7 @@ if(SCREEN_WIDTH >= 2000) {
     SIGN_IN.style.left = '0px';
 }
 
-if(SCREEN_WIDTH >= 1300 && SCREEN_WIDTH < 2000) {
+if(SCREEN_WIDTH >= 1600 && SCREEN_WIDTH < 2000) {
     position = 614;
     moveSize = 614;
     HELLO_FRIEND.style.left = '614px';
@@ -35,7 +35,20 @@ if(SCREEN_WIDTH >= 1300 && SCREEN_WIDTH < 2000) {
     SIGN_IN.style.left = '0px';
 }
 
-if(SCREEN_WIDTH >= 800 && SCREEN_WIDTH < 1300) {
+if(SCREEN_WIDTH >= 1100 && SCREEN_WIDTH < 1600) {
+    position = 478;
+    moveSize = 478;
+    HELLO_FRIEND.style.left = '478px';
+    BLOCK_RIGHT.style.left = '956px';
+    CREATE_ACCOUNT.style.left = '956px';
+    BLOCK_LEFT.style.left = '-478px';
+    SIGN_IN.style.top = '0px';
+    CREATE_ACCOUNT.style.top = '0px';
+    WELLCOME_BACK.style.left = '0px';
+    SIGN_IN.style.left = '0px';
+}
+
+if(SCREEN_WIDTH >= 800 && SCREEN_WIDTH < 1100) {
     position = 368;
     moveSize = 368;
     HELLO_FRIEND.style.left = '368px';
@@ -48,13 +61,25 @@ if(SCREEN_WIDTH >= 800 && SCREEN_WIDTH < 1300) {
     SIGN_IN.style.left = '0px';
 }
 
-if(SCREEN_WIDTH < 800) {
+if(SCREEN_WIDTH >= 541 && SCREEN_WIDTH < 800) {
+    position = 0;
+    moveSize = 541;
+    HELLO_FRIEND.style.left = '0px';
+    WELLCOME_BACK.style.left = '-541px';
+    SIGN_IN.style.top = '336px';
+    CREATE_ACCOUNT.style.top = '336px';
+    BLOCK_RIGHT.style.left = '541px';
+    CREATE_ACCOUNT.style.left = '541px';
+    BLOCK_LEFT.style.left = '-541px';
+}
+
+if(SCREEN_WIDTH < 541) {
     position = 0;
     moveSize = 360;
     HELLO_FRIEND.style.left = '0px';
     WELLCOME_BACK.style.left = '-360px';
-    SIGN_IN.style.top = '280px';
-    CREATE_ACCOUNT.style.top = '280px';
+    SIGN_IN.style.top = '260px';
+    CREATE_ACCOUNT.style.top = '260px';
     BLOCK_RIGHT.style.left = '360px';
     CREATE_ACCOUNT.style.left = '360px';
     BLOCK_LEFT.style.left = '-360px';
@@ -75,7 +100,7 @@ window.addEventListener("resize", function() {
         SIGN_IN.style.left = '0px';
     }
     
-    if(SCREEN_WIDTH >= 1300 && SCREEN_WIDTH < 2000) {
+    if(SCREEN_WIDTH >= 1600 && SCREEN_WIDTH < 2000) {
         position = 614;
         moveSize = 614;
         HELLO_FRIEND.style.left = '614px';
@@ -88,7 +113,20 @@ window.addEventListener("resize", function() {
         SIGN_IN.style.left = '0px';
     }
     
-    if(SCREEN_WIDTH >= 800 && SCREEN_WIDTH < 1300) {
+    if(SCREEN_WIDTH >= 1100 && SCREEN_WIDTH < 1600) {
+        position = 478;
+        moveSize = 478;
+        HELLO_FRIEND.style.left = '478px';
+        BLOCK_RIGHT.style.left = '956px';
+        CREATE_ACCOUNT.style.left = '956px';
+        BLOCK_LEFT.style.left = '-478px';
+        SIGN_IN.style.top = '0px';
+        CREATE_ACCOUNT.style.top = '0px';
+        WELLCOME_BACK.style.left = '0px';
+        SIGN_IN.style.left = '0px';
+    }
+    
+    if(SCREEN_WIDTH >= 800 && SCREEN_WIDTH < 1100) {
         position = 368;
         moveSize = 368;
         HELLO_FRIEND.style.left = '368px';
@@ -100,14 +138,26 @@ window.addEventListener("resize", function() {
         WELLCOME_BACK.style.left = '0px';
         SIGN_IN.style.left = '0px';
     }
-    
-    if(SCREEN_WIDTH < 800) {
+
+    if(SCREEN_WIDTH >= 541 && SCREEN_WIDTH < 800) {
+        position = 0;
+        moveSize = 541;
+        HELLO_FRIEND.style.left = '0px';
+        WELLCOME_BACK.style.left = '-541px';
+        SIGN_IN.style.top = '336px';
+        CREATE_ACCOUNT.style.top = '336px';
+        BLOCK_RIGHT.style.left = '541px';
+        CREATE_ACCOUNT.style.left = '541px';
+        BLOCK_LEFT.style.left = '-541px';
+    }
+
+    if(SCREEN_WIDTH < 541) {
         position = 0;
         moveSize = 360;
         HELLO_FRIEND.style.left = '0px';
         WELLCOME_BACK.style.left = '-360px';
-        SIGN_IN.style.top = '280px';
-        CREATE_ACCOUNT.style.top = '280px';
+        SIGN_IN.style.top = '260px';
+        CREATE_ACCOUNT.style.top = '260px';
         BLOCK_RIGHT.style.left = '360px';
         CREATE_ACCOUNT.style.left = '360px';
         BLOCK_LEFT.style.left = '-360px';
