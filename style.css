@@ -12,13 +12,24 @@
     }
     
     .form-wrapper {
-        width: 736px;
-        height: 460px;
+        width: 360px;
+        height: 740px;
+        flex-direction: column;
     }
     
     .form-wrapper > div {
-        width: 368px;
+        width: 360px;
         height: 460px;
+    }
+
+    #sign-in-form, #create-account {
+        width: 360px;
+        height: 460px;
+    }
+
+    #hello-friend, #welcome-back {
+        width: 360px;
+        height: 280px;
     }
     
     #sign-in-form > div, #create-account > div {
@@ -94,6 +105,7 @@
         width: 736px;
         height: 460px;
         box-shadow: 5px 12px 7px 5px #C6C5C7;
+        flex-direction: row;
     }
     
     .form-wrapper > div {
@@ -101,6 +113,11 @@
         height: 460px;
     }
     
+    #sign-in-form, #create-account, #hello-friend, #welcome-back {
+        width: 368px;
+        height: 460px;
+    }
+
     #sign-in-form > div, #create-account > div {
         font-size: 28px;
         font-weight: bolder;
@@ -177,6 +194,11 @@
         height: 768px;
     }
     
+    #sign-in-form, #create-account, #hello-friend, #welcome-back {
+        width: 614px;
+        height: 768px;
+    }
+
     #sign-in-form > div, #create-account > div {
         font-size: 48px;
         font-weight: 1000;
@@ -249,6 +271,11 @@
     }
     
     .form-wrapper > div {
+        width: 768px;
+        height: 960px;
+    }
+
+    #sign-in-form, #create-account, #hello-friend, #welcome-back {
         width: 768px;
         height: 960px;
     }
