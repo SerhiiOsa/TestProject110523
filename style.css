@@ -20,6 +20,7 @@
     display: flex;
     position: relative;
     border-radius: 20px;
+    box-shadow: 10px 25px 15px 10px #C6C5C7;
     overflow: hidden;
 }
 
@@ -31,7 +32,12 @@
     position: absolute;
 }
 
-#sign-in-form {
+#sign-in-form, #create-account {
+    background: white;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+} {
     color: black;
     background: white;
     justify-content: center;
@@ -39,7 +45,7 @@
     z-index: 2;
 }
 
-#sign-in-form > div {
+#sign-in-form > div, #create-account > div {
     font-size: 60px;
     font-weight: 1000;
     margin-bottom: 60px;
@@ -65,11 +71,15 @@
     align-items: center;
 }
 
-#sign-in-form > p {
+#sign-in-form > p, #create-account > p {
     font-size: 30px;
     font-weight: normal;
     text-align: center;
     margin-bottom: 20px;
+}
+
+#create-account > p {
+    font-size: 25px;
 }
 
 .loginForm {
@@ -87,7 +97,7 @@
 }
 
 input {
-    font-size: 21px;
+    font-size: 25px;
     background: #DDDDDD;
     width: 560px;
     height: 80px;
@@ -114,29 +124,24 @@ input:last-child {
     z-index: 1;
 }
 
-#hello-friend > div {
+#welcome-back {
+    color: white;
+    background: linear-gradient(to right, #EC5A3C 0%, #EB5655 100%);
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+#hello-friend > div, #welcome-back > div {
     font-size: 60px;
     font-weight: 1000;
     margin-bottom: 60px;
 }
 
-#hello-friend > div > p {
+#hello-friend > div > p, #welcome-back > div > p {
     font-size: 30px;
     font-weight: normal;
     text-align: center;
-}
-
-#welcome-back {
-    color: white;
-    background: linear-gradient(to right, #EC5A3C 0%, #EB5655 100%);
-    display: flex;
-    z-index: 1;
-}
-
-#create-account {
-    background: white;
-    display: flex;
-    z-index: 2;
 }
 
 #block-right {
