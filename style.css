@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .wrapper{
@@ -26,22 +27,103 @@
     width: 768px;
     height: 960px;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     position: absolute;
 }
 
 #sign-in-form {
+    color: black;
     background: white;
+    justify-content: center;
     display: flex;
     z-index: 2;
+}
+
+#sign-in-form > div {
+    font-size: 60px;
+    font-weight: 1000;
+    margin-bottom: 60px;
+}
+
+.soc-networks {
+    width: 296px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.soc-networks > div {
+    font-size: 30px;
+    font-weight: bold;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #DDDDDD;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-in-form > p {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginForm {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm > p {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+input {
+    font-size: 21px;
+    background: #DDDDDD;
+    width: 560px;
+    height: 80px;
+    border: none;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+input:last-child {
+    font-size: 25px;
+    color: white;
+    background-color: #EC5A3C;
+    border: 2px solid;
+    border-radius: 50px;
+    width: 300px;
+    height: 80px;
 }
 
 #hello-friend {
     color: white;
     background: linear-gradient(to right, #EB5655 0%, #EB526E 100%);
+    justify-content: center;
     display: flex;
     z-index: 1;
+}
+
+#hello-friend > div {
+    font-size: 60px;
+    font-weight: 1000;
+    margin-bottom: 60px;
+}
+
+#hello-friend > div > p {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
 }
 
 #welcome-back {
@@ -70,10 +152,12 @@
 }
 
 button {
+    font-size: 25px;
     color: white;
     border-color: white;
     background-color: transparent;
+    border: 2px solid;
     border-radius: 50px;
     width: 300px;
-    height: 70px;
+    height: 80px;
 }
